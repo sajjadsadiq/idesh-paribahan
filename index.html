@@ -12,6 +12,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Main CSS File Link Here -->
     <link rel="stylesheet" href="./assets/styles/style.css" />
+    <!-- Tailwind Customize Your Configuration  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-clr": "#1DD100",
+            },
+          },
+        },
+      };
+    </script>
     <!-- Title Tags Here -->
     <title>iDash Paribahann - No 1 Bus Service</title>
   </head>
@@ -19,8 +31,9 @@
     <header></header>
     <main>
       <section
-        class="paribahan-section bg-[#F7F8F8] rounded-t-[100px] border-t-[3px] border-[#1DD100]"
+        class="paribahan-section bg-[#F7F8F8] rounded-t-[100px] border-t-[3px] border-primary-clr pb-44"
       >
+        <!-- Paribahan Head Content -->
         <div class="paribahan-head-content text-center">
           <h2 class="text-4xl font-bold pt-16">iDesh Paribahan</h2>
           <p class="py-6">
@@ -54,7 +67,7 @@
                 <!-- Paribahan Total Seat -->
                 <div class="paribahan-total-seat">
                   <button
-                    class="flex items-center justify-center text-[#1DD100] bg-[#1DD10026] gap-1 p-4 rounded-lg"
+                    class="flex items-center justify-center text-primary-clr bg-[#1DD10026] gap-1 p-4 rounded-lg"
                   >
                     <img src="./assets/images/seat-green-filled.png" alt="" />
                     <span class="text-xl">40</span>
@@ -106,9 +119,138 @@
               <p class="text-2xl">Per Seat</p>
             </div>
           </div>
-          
+
           <!-- Paribahan Seat list Pirce Info -->
-          <div class="paribahan-seat-list-price-information"></div>
+          <div
+            class="paribahan-seat-list-price-info container mx-auto bg-white p-8 rounded-xl mt-10 flex gap-10"
+          >
+            <!-- Paribahan Seat List -->
+            <div class="paribahan-seat-list flex-1">
+              <h3 class="text-2xl font-semibold">Select Your Seat</h3>
+              <!-- dash -->
+              <p class="outline-dashed outline-1 outline-[#03071233] my-4"></p>
+              <!-- available & selected -->
+              <div
+                class="availabel-selected flex justify-between items-center py-6"
+              >
+                <div class="availabel flex items-center gap-2">
+                  <img src="./assets/images/seat-gray.png" alt="" />
+                  <p>Availabel</p>
+                </div>
+                <div class="selected text-primary-clr flex items-center gap-2">
+                  <img src="./assets/images/seat-green.png" alt="" />
+                  <p class="">Selected</p>
+                </div>
+              </div>
+              <!-- dash -->
+              <p class="outline-dashed outline-1 outline-[#03071233]"></p>
+              <!-- steering wheel  -->
+              <div class="flex items-center justify-end py-6">
+                <img
+                  class="bg-[#0307121A] px-10 py-4 rounded-lg"
+                  src="./assets/images/steering-wheel.png"
+                  alt=""
+                />
+              </div>
+              <!-- paribahan seat list -->
+              <div class="paribahan-seat-list grid grid-cols-2 gap-16">
+                <!-- left seat list -->
+                <div class="left-seat-list grid grid-cols-2 gap-4">
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    A1
+                  </button>
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    A2
+                  </button>
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    B1
+                  </button>
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    B2
+                  </button>
+                </div>
+                <!-- right seat list -->
+                <div class="right-seat-list grid grid-cols-2 gap-4">
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    A3
+                  </button>
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    A4
+                  </button>
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    B3
+                  </button>
+                  <button
+                    class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
+                  >
+                    B4
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- dash devider-->
+            <p class="outline-dashed outline-1 outline-[#03071233] my-4"></p>
+            <!-- Seat List Information Passenger -->
+            <div class="seat-list-passenger-info w-5/12">
+              <h3 class="text-2xl font-semibold">Select Your Seat</h3>
+              <!-- dash -->
+              <p class="outline-dashed outline-1 outline-[#03071233] mt-4"></p>
+              <br />
+              <!-- seat selected list -->
+              <div class="bg-[#F7F8F8] p-6 rounded-lg">
+                <div class="flex items-center justify-between">
+                  <strong
+                    >Seat
+                    <span class="bg-primary-clr text-white rounded-full p-1"
+                      >2</span
+                    ></strong
+                  >
+                  <strong>Class</strong>
+                  <strong>Price</strong>
+                </div>
+                <!-- dash -->
+                <p
+                  class="outline-dashed outline-1 outline-[#03071233] my-4"
+                ></p>
+                <!-- selected seat -->
+                <div class="selected-seat-container pt-4">
+                  <div class="selected-seat flex items-center justify-between">
+                    <p>C2</p>
+                    <p>Economoy</p>
+                    <p>550</p>
+                  </div>
+                  <div class="selected-seat flex items-center justify-between">
+                    <p>C3</p>
+                    <p>Economoy</p>
+                    <p>550</p>
+                  </div>
+                </div>
+                <!-- dash -->
+                <p
+                  class="outline-dashed outline-1 outline-[#03071233] my-4"
+                ></p>
+                <!-- total pirce -->
+                <div class="total-price flex items-center justify-between pt-4">
+                  <strong>Total Price</strong>
+                  <strong><span>BDT</span> <span>1100</span></strong>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
