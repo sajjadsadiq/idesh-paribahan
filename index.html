@@ -16,9 +16,102 @@
     <title>iDash Paribahann - No 1 Bus Service</title>
   </head>
   <body>
-    <h1>iDesh Paribahann</h1>
     <header></header>
-    <main></main>
+    <main>
+      <section
+        class="paribahan-section bg-[#F7F8F8] rounded-t-[100px] border-t-[3px] border-[#1DD100]"
+      >
+        <div class="paribahan-head-content text-center">
+          <h2 class="text-4xl font-bold pt-16">iDesh Paribahan</h2>
+          <p class="py-6">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated <br />
+            testing features allow for a streamlined .
+          </p>
+        </div>
+        <!-- Paribahan wrapper -->
+        <div class="paribahan-wrapper">
+          <!-- Paribahan Destination Price -->
+          <div
+            class="paribahan-destination-price flex items-center container mx-auto bg-white px-8 rounded-xl gap-7"
+          >
+            <!-- destination -->
+            <div class="paribahan-destination flex-1">
+              <!-- paribahan number & total ticket -->
+              <div
+                class="paribahan-number-total-seat flex justify-between items-center"
+              >
+                <!-- Paribahan Number -->
+                <div
+                  class="paribahan-number-icon flex items-center justify-center gap-4"
+                >
+                  <img src="./assets/images/bus-logo.png" alt="" />
+                  <div class="paribahan-number">
+                    <h3 class="text-3xl font-bold">iDesh Paribahan</h3>
+                    <p class="text-lg">Coach-102-WEB!AC_Business</p>
+                  </div>
+                </div>
+                <!-- Paribahan Total Seat -->
+                <div class="paribahan-total-seat">
+                  <button
+                    class="flex items-center justify-center text-[#1DD100] bg-[#1DD10026] gap-1 p-4 rounded-lg"
+                  >
+                    <img src="./assets/images/seat-green-filled.png" alt="" />
+                    <span class="text-xl">40</span>
+                    <span>Seats left</span>
+                  </button>
+                </div>
+              </div>
+              <!-- paribahan destination -->
+              <div
+                class="paribahan-destination-time bg-[#F7F8F8] p-6 rounded-lg mt-8"
+              >
+                <div class="route flex justify-between items-center">
+                  <span>Route</span>
+                  <strong>Dhaka - Cox's Bazar</strong>
+                </div>
+                <p
+                  class="outline-dashed outline-1 outline-[#03071233] my-4"
+                ></p>
+                <div
+                  class="departe-time flex justify-between items-center pt-4"
+                >
+                  <span>Departure Time</span>
+                  <strong>11:15 PM</strong>
+                </div>
+                <p
+                  class="outline-dashed outline-1 outline-[#03071233] my-4"
+                ></p>
+                <div class="flex items-center pt-4 gap-4">
+                  <button class="px-4 py-5 rounded-lg bg-[#0307120D]">
+                    Boarding Point - Laxmipur
+                  </button>
+                  <button class="px-4 py-5 rounded-lg bg-[#0307120D]">
+                    Dropping Point - Bogura
+                  </button>
+                  <button class="px-4 py-5 rounded-lg bg-[#0307120D]">
+                    Est. Time - 11 Hour
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- info devider -->
+            <img src="./assets/images/info-devider.png" alt="" />
+            <!-- tickete parice -->
+            <div
+              class="paribahan-ticket-price text-center w-48 flex flex-col gap-3 items-center justify-center"
+            >
+              <img src="./assets/images/fare.png" alt="" />
+              <h2 class="text-4xl font-bold">550 Taka</h2>
+              <p class="text-2xl">Per Seat</p>
+            </div>
+          </div>
+          
+          <!-- Paribahan Seat list Pirce Info -->
+          <div class="paribahan-seat-list-price-information"></div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <!-- Script File Link Here -->
     <script src="./assets/js/utility.js"></script>
