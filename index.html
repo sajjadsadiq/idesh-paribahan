@@ -70,7 +70,7 @@
                     class="flex items-center justify-center text-primary-clr bg-[#1DD10026] gap-1 p-4 rounded-lg"
                   >
                     <img src="./assets/images/seat-green-filled.png" alt="" />
-                    <span class="text-xl">40</span>
+                    <span id="total-seat-number" class="text-xl">8</span>
                     <span>Seats left</span>
                   </button>
                 </div>
@@ -157,21 +157,25 @@
                 <!-- left seat list -->
                 <div class="left-seat-list grid grid-cols-2 gap-4">
                   <button
+                    id="A1"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     A1
                   </button>
                   <button
+                    id="A2"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     A2
                   </button>
                   <button
+                    id="B1"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     B1
                   </button>
                   <button
+                    id="B2"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     B2
@@ -180,21 +184,25 @@
                 <!-- right seat list -->
                 <div class="right-seat-list grid grid-cols-2 gap-4">
                   <button
+                    id="A3"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     A3
                   </button>
                   <button
+                    id="A4"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     A4
                   </button>
                   <button
+                    id="B3"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     B3
                   </button>
                   <button
+                    id="B4"
                     class="btn bg-[#F7F8F8] hover:bg-[#F7F8F8] px-10 py-4 rounded-lg"
                   >
                     B4
@@ -215,8 +223,10 @@
                 <div class="flex items-center justify-between">
                   <strong
                     >Seat
-                    <span class="bg-primary-clr text-white rounded-full p-1"
-                      >2</span
+                    <span
+                      id="seat-count"
+                      class="bg-primary-clr text-white rounded-full p-1"
+                      >0</span
                     ></strong
                   >
                   <strong>Class</strong>
@@ -227,18 +237,10 @@
                   class="outline-dashed outline-1 outline-[#03071233] my-4"
                 ></p>
                 <!-- selected seat -->
-                <div class="selected-seat-container pt-4">
-                  <div class="selected-seat flex items-center justify-between">
-                    <p>C2</p>
-                    <p>Economoy</p>
-                    <p>550</p>
-                  </div>
-                  <div class="selected-seat flex items-center justify-between">
-                    <p>C3</p>
-                    <p>Economoy</p>
-                    <p>550</p>
-                  </div>
-                </div>
+                <div
+                  id="selected-seat-container-parent"
+                  class="selected-seat-container pt-4"
+                ></div>
                 <!-- dash -->
                 <p
                   class="outline-dashed outline-1 outline-[#03071233] my-4"
@@ -246,7 +248,33 @@
                 <!-- total pirce -->
                 <div class="total-price flex items-center justify-between pt-4">
                   <strong>Total Price</strong>
-                  <strong><span>BDT</span> <span>1100</span></strong>
+                  <strong
+                    ><span>BDT</span> <span id="total-price">0</span></strong
+                  >
+                </div>
+                <!-- coupen -->
+                <div id="coupenBox" class="flex py-4">
+                  <input
+                    id="coupen-field"
+                    type="text"
+                    placeholder="Type here"
+                    class="input input-bordered w-full max-w-xs"
+                  />
+                  <button
+                    id="grand-total-btn"
+                    onclick="grandTotalBtn()"
+                    class="btn bg-primary-clr hover:bg-primary-clr"
+                    disabled
+                  >
+                    Apply
+                  </button>
+                </div>
+                <!-- Grand Total -->
+                <div class="total-price flex items-center justify-between pt-4">
+                  <strong>Grand Total</strong>
+                  <strong
+                    ><span>BDT</span> <span id="grand-total">0</span></strong
+                  >
                 </div>
               </div>
             </div>
